@@ -1,3 +1,45 @@
-p {
-  font-family: Lato;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container,
+.wrapper {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+}
+.wrapper {
+  list-style: none;
+}
+.wrapper li {
+  width: 800px;
+  height: 500px;
+  position: absolute;
+}
+.img {
+  width: 800px;
+  height: 500px;
+}
+.btn {
+  padding: 5px 10px;
+  background-color: blueviolet;
+  color: white;
+  /* position: absolute; */
+}
+.btn-grp {
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  color: #fff;
+  position: absolute;
+  z-index: 999;
+  padding: 30px 30px;
+  background-color: black;
+  opacity: 0.5;
 }

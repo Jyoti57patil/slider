@@ -1,4 +1,39 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="container" [ngSwitch]="case">
+  <h1>{{ case }}</h1>
+  <ul class="wrapper">
+    <li *ngSwitchCase="1">
+      <img
+        src="https://images.pexels.com/photos/9982086/pexels-photo-9982086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        class="img"
+      />
+    </li>
+    <li *ngSwitchCase="2">
+      <img
+        src="https://images.pexels.com/photos/11258734/pexels-photo-11258734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        class="img"
+      />
+    </li>
+    <li *ngSwitchCase="3">
+      <img
+        src="https://images.pexels.com/photos/11022402/pexels-photo-11022402.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        class="img"
+      />
+    </li>
+    <li *ngSwitchCase="4">
+      <img
+        src="https://images.pexels.com/photos/10152067/pexels-photo-10152067.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        class="img"
+      />
+    </li>
+    <li *ngSwitchCase="5">
+      <img
+        src="https://images.pexels.com/photos/8473998/pexels-photo-8473998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        class="img"
+      />
+    </li>
+  </ul>
+  <div class="btn-grp">
+    <button (click)="prev()" class="btn">previous</button>
+    <button (click)="next()" class="btn">Next</button>
+  </div>
+</div>
